@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size:6px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:#333333;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 1.6rem;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding: 1.6rem 0;
+    font-size: 2rem;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*Header*/
+
+header{
+    height: 45rem;
+}
+
+header .bg-image{
+    background-image: url(img/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 45rem;
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+    z-index:-1;
+}
+
+header h1{
+    padding: 11rem;
+    padding-bottom: 0;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background-color: #eaeaea;
+    color: #333333;
+
+}
+
+/*section-a*/
+#section-a{
+    background-color: #eaeaea;
+    color: #333333;
+    padding: 3.2rem 0;
+}
+
+/*section-b*/
+#section-b{
+    padding: 2rem;
+}
+
+#section-b ul{
+    list-style: none;
+}
+
+#section-b li{
+    background-color: #ffffff;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content{
+    padding: 1.5rem;
+}
+
+/*section-c*/
+
+#section-c{
+    background-color: #eaeaea;
+    color: #333333;
+    padding: 5rem;
+}
+
+/*section-d*/
+
+#section-d .box{
+    padding: 5rem;
+}
+
+#section-d .box:first-child{
+    background-color: #2690d4;
+}
+
+/*footer*/
+
+footer{
+    background-color: #000000;
+    padding: 4rem;
+}
+
+footer a {
+    color: #2690d4;
+}
+
+@media screen and (min-width:800px) {
+    html{
+        font-size:8px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+    .box{
+        width: 50%;
+        float: left;
+
+    }
+    html{
+        font-size:10px;
+    }
+
+}
